@@ -192,14 +192,14 @@
               </div>
               <div class="content">
                 <h5>Business Support & Promotion Services</h5>
-                <div class="subservices">
+                
                 <p>
                  Incorporation to Breakeven Support
                 </p>
                 <p>Marketing, Branding & Business Promotion Services</p>
                 <p>Product & Project Promotion Services (Domestic & International)</p>
                 <p>Business Matching & Lead Generation Services</p>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -214,14 +214,14 @@
               </div>
               <div class="content">
                 <h5>Trade, Logistics & Import–Export Services</h5>
-                  <div class="subservices">
+                 
                 <p>
                   Domestic Freight Transportation & Logistics Coordination
                 </p>
                 <p>Goods Import & Export Services</p>
                 <p>Technology Import & Export Solutions</p>
                 <p>Import & Export Agency & Documentation Services</p>
-                </div>
+              
               </div>
             </div>
           </div>
@@ -234,14 +234,14 @@
               </div>
               <div class="content">
                 <h5>Specialized Promotion & Agency Services</h5>
-                  <div class="subservices">
+                  
                 <p>
                  Prefabricated Housing Promotion & Project Facilitation
                 </p>
                 <p>Smart Home & Smart Fitness Equipment Promotion</p>
                 <p>Education Consultancy & Student-to-Institution </p>
                 <p>Overseas Business & Project Referral Services</p>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -525,6 +525,10 @@
         </div>
       </div>
     </footer>
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+
     <!-- ========================= footer style-4 end ========================= -->
 
     <!-- ========================= scroll-top start ========================= -->
@@ -532,6 +536,18 @@
     <!-- ========================= scroll-top end ========================= -->
 
     <!-- ========================= JS here ========================= -->
+
+  <script>
+  const dot = document.querySelector('.cursor-dot');
+  const circle = document.querySelector('.cursor-circle');
+
+  document.addEventListener('mousemove', (e) => {
+    dot.style.left = circle.style.left = e.clientX + 'px';
+    dot.style.top  = circle.style.top  = e.clientY + 'px';
+  });
+</script>
+
+
     <script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/wow.min.js"></script>

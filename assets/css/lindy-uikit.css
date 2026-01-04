@@ -2420,3 +2420,49 @@ input:focus, textarea:focus, button:focus {
   flex: 1;
 }
 
+body {
+  cursor: none; /* hide default cursor */
+}
+
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Center dot */
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color:#323450;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+}
+
+/* Outer circle */
+.cursor-circle {
+  width: 34px;          /* Bigger circle */
+  height: 34px;
+  border: 2px solid #323450;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.12s ease-out;
+  z-index: 10000;
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot,
+  .cursor-circle {
+    display: none;
+  }
+}
+
